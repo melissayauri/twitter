@@ -49,6 +49,8 @@ top:150px;
 
 #caja div{
   background-color: red;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 #enviar{
