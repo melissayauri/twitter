@@ -43,8 +43,12 @@ top:150px;
   border: 1px solid red;
   width: 50%;
   height: 100px;
-  background-color: white;
+  background-color: purple;
 
+}
+
+#caja div{
+  background-color: red;
 }
 
 #enviar{
