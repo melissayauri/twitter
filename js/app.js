@@ -25,6 +25,7 @@ function enterText(){
 }
 
 function validar(){
+  /*incorporando la validacion*/
 /*var tweet = document.formul.text;*/
 /*document.getElementById("contador").innerHTML = document.getElementById('entrada').value.length;*/
 var contador= document.getElementById("contador");
