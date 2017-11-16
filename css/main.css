@@ -50,6 +50,7 @@ background-color: transparent;
   margin-left: 70px;
   font-size: 18px;
 }
+/*cuerpo*/
 main{
   background-image: url(../assets/images/paris7.jpg);
   /*la imagen de fondo no se repite*/
@@ -108,12 +109,12 @@ main .presentation .box1{
   bottom: 170px;
 }
 /*formulario*/
-.formulario{
+.formul{
   background-color: white;
   border-radius: 20px;
 }
 /*entrada del texto*/
-#entrada{
+#input-text{
   width: 100%;
   height: 80px;
   border: 1px solid #fbb0c7;
@@ -121,32 +122,58 @@ main .presentation .box1{
   font-size: 20px;
 }
 /*boton enviar */
-#enviar{
+#send{
   padding: 10px;
-  border-radius: 10px;
+  /*border-radius: 10px;
   background-color:  #FFB6C1;
-  border: 3px dotted #FA8072;
-  color: white;
+border: 3px dotted #FA8072;
+  color: white;*/
 }
-#contador{
+#count{
 /*outline: 1px solid blue;*/
 height: 20px;
 display: inline-block;
 width: 30px;
 margin-left: 550px;
 font-size: 30px;
+color: #fbb0c7;
 
 }
 /*contenedor de los nuevos mensajes*/
-#caja{
+#box-newtext{
   width: 70%;
 }
 /*nuevos textos*/
-#caja div{
+#box-newtext div{
   background-color:#fbb0c7;
   margin-top: 10px;
   border-radius: 5px;
   border: 5px double white;
   /*el texto se adecua al su contenedor,genera saltos de linea*/
   word-break: break-all;
+}
+/*estilos para las escalas del contado*/
+#red{
+  height: 20px;
+  display: inline-block;
+  width: 30px;
+  margin-left: 550px;
+  font-size: 30px;
+  color:red;
+}
+#purple{
+  height: 20px;
+  display: inline-block;
+  width: 30px;
+  margin-left: 550px;
+  font-size: 30px;
+  color:#CD00FF;
+}
+#blue{
+  height: 20px;
+  display: inline-block;
+  width: 30px;
+  margin-left: 550px;
+  font-size: 30px;
+  color:#2B00FF;
 }

@@ -1,15 +1,18 @@
 window.addEventListener('load', function(event){
   /*boton enviar del formulario*/
-  var buttonSend = document.getElementById('enviar');
+  var buttonSend = document.getElementById('send');
   /*variable cuando se ingresa el texto*/
-  var text =   document.getElementById('entrada')
+  var text =   document.getElementById('input-text')
   /*variable del contendor de los nuevos textos*/
-  var showText = document.getElementById('caja');
+  var showText = document.getElementById('box-newtext');
+  /*contador*/
+  var count = document.getElementById('count');
   /*llamando al evento click*/
   buttonSend.addEventListener('click',enterText);
   /*funcion para ingresar el texto*/
   function enterText(){
     /*valor de la entrada del texto*/
+    buttonSend.disabled = false;
     var myText = text.value;
     /*aplica para que la entrada del texto se vacie luego del click*/
     text.value = "";
@@ -19,11 +22,41 @@ window.addEventListener('load', function(event){
     newText.textContent = myText;
     /*creando los nuevos textos*/
     showText.appendChild(newText);
+/*
+    if(myText == 0 || myText == null){
+      alert("el campo vacio");
+      buttonSend.disabled = true;
+      showText.removeChild(newText);
+    }*/
   }
+/*llamando a la tecla*/
+  text.addEventListener('keydown', countCharacters);
+  /**/
+    function countCharacters(){
+      buttonSend.disabled=false;
+      var limitedCharacters= 140;
+      var size = text.value.length;
+      count.innerHTML= limitedCharacters-size;
 
+      if(size>=140){
+        /*count.style.color="green";*/
+        count.setAttribute("id","red");
+        buttonSend.disabled= true;
+      }
+      else if(size>=120 && size<=129){
+        count.setAttribute("id","purple");
+        buttonSend.disabled= false;
+      }
+      else if(size>=130 && size<=139){
+        count.setAttribute("id","blue");
+        buttonSend.disabled= false;
+      }
+      else{
+        count.setAttribute("id","count");
+      }
+    }
 
-
-})
+  })
 
 
 /*

@@ -24,6 +24,7 @@
       <!--usuario-->
       <span class="user"><i class="fa fa-user-circle" aria-hidden="true"></i>Melissa Yauri</span>
     </header>
+
     <main>
       <!--recuadro de presentacion-->
       <div class="presentation">
@@ -38,14 +39,16 @@
       </div>
       <!--seccion de entrada dekl mensaje-->
       <div class="box">
-        <form class="formulario"name="formul">
+        <form class="formul"name="formul">
           <!--seccion de entrada dekl mensaje-->
-          <textarea  id="entrada"type="text" name="texto" value=""></textarea>
+          <textarea  id="input-text" type="text" name="texto" value="" placeholder="What are you thinking?"></textarea>
           <!--boton del formulario-->
-          <button id="enviar" type="button" name="button">Tweet</button>
-          <p id="contador">140</p>
+          <button id="send" type="button" name="button">Tweet</button>
+          <!--contador-->
+          <p id="count">140</p>
         </form>
-        <div id="caja">
+        <!--contenedor de los nuevos textos-->
+        <div id="box-newtext">
 
         </div>
       </div>
