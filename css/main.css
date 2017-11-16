@@ -120,6 +120,7 @@ main .presentation .box1{
   border: 1px solid #fbb0c7;
   border-bottom: 5px dotted #fbb0c7;
   font-size: 20px;
+  overflow: hidden;
 }
 /*boton enviar */
 #send{
