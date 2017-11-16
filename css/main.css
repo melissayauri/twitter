@@ -2,26 +2,61 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Pacifico', cursive;
 }
 
 header{
   color: white;
-  text-align: center;
-  background-color:rgb(136, 78, 160);
+  /*text-align: center;*/
+  background-color:#fbb0c7;
   height: 70px;
   width: 100%;
   top: 0;
   z-index: 1000;
   position: fixed;
-}
+  font-size: 20px;
 
+}
+/*aplicando estilos a los enlaces del encabezado*/
+header a{
+  /*outline: 1px solid red;*/
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+/*titulo twitter*/
+header h1{
+  /*outline: 1px solid blue;*/
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 20px;
+}
+/*buscador de twiters*/
+header .search{
+  display: inline-block;
+  border: 1px solid white;
+  background-color: #FFC0CB;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+/*estilos a la entrada del buscador*/
+header .search input{
+border: none;
+background-color: transparent;
+}
+/*estilos al usuario*/
+.user{
+  margin-left: 70px;
+  font-size: 18px;
+}
 main{
-  background-image: url(../assets/images/flores2.jpg);
+  background-image: url(../assets/images/paris7.jpg);
   /*la imagen de fondo no se repite*/
   background-repeat: no-repeat;
   /*se aplica para que cubra toda la zona*/
   background-size: cover;
-  height: 900px;
+  height: 1300px;
 }
 
 .box{
