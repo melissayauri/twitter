@@ -53,10 +53,17 @@ window.addEventListener('load', function(event){
         count.setAttribute("id","count");
       }
     }
-text.addEventListener('click',enter);
+text.addEventListener('keydown',enter);
 function enter(){
+
+text.setAttribute("id","big");
 
 }
 
+buttonTweet .addEventListener('click',en);
+function en(){
 
+text.setAttribute("id","input-text");
+
+}
   })
