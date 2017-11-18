@@ -116,11 +116,15 @@ main .presentation .box1{
 /*entrada del texto*/
 #input-text{
   width: 100%;
-  /*height: 80px;*/
+
   border: 1px solid #fbb0c7;
   border-bottom: 5px dotted #fbb0c7;
   font-size: 20px;
   overflow: hidden;
+}
+
+#input5{
+  height: auto;
 }
 /*boton enviar */
 #send{
