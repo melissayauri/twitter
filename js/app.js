@@ -8,6 +8,7 @@ window.addEventListener('load', function(event) {
   var showText = document.getElementById('box-newtext');
   /* contador*/
   var count = document.getElementById('count');
+
   /* llamando al evento click* en el boton tweet*/
   buttonTweet.addEventListener('click', enterText);
   /* funcion para ingresar el texto*/
@@ -16,17 +17,20 @@ window.addEventListener('load', function(event) {
     var myText = text.value + '<br>' + moment().format('LT');
     /* aplica para que la entrada del texto se vacie luego del click*/
     text.value = '';
-    /* variable de los nuevos textos*/
-    var newText = document.createElement('div');
     /* validando si se ingresa un campo vacío*/
-    if (text === 0 || text === null) {
+    if (text.value === 0 || text.value === null) {
       /* desabilitando el botón tweet*/
       buttonTweet.disabled = true;
     } else {
+      /* variable de los nuevos textos*/
+      var newText = document.createElement('div');
       /* incoporando el texto ingresado en el elemento div*/
       newText.innerHTML = myText ;
       /* creando los nuevos textos*/
       showText.appendChild(newText);
+      /* incorporando nuevamente el numero del contador*/
+      count.innerHTML = 140;
+      /* text.value = '';*/
     }
   }
   /* ejecutando la tecla pulsada en la entrada del texto*/
