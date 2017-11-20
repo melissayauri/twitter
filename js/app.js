@@ -15,14 +15,14 @@ window.addEventListener('load', function(event) {
     /* valor de la entrada del texto más la hora*/
     var myText = text.value + '<br>' + moment().format('LT');
     /* aplica para que la entrada del texto se vacie luego del click*/
-    text.value = '' ;
+    text.value = '';
+    /* variable de los nuevos textos*/
+    var newText = document.createElement('div');
     /* validando si se ingresa un campo vacío*/
-    if (myText === 0 || myText === null) {
+    if (text === 0 || text === null) {
       /* desabilitando el botón tweet*/
       buttonTweet.disabled = true;
     } else {
-      /* variable de los nuevos textos*/
-      var newText = document.createElement('div');
       /* incoporando el texto ingresado en el elemento div*/
       newText.innerHTML = myText ;
       /* creando los nuevos textos*/
